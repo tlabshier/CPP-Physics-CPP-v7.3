@@ -1,5 +1,6 @@
 CPP-v7.3 — Reproducible Simulations for viXra 17610494
 This README contains prototype Python code snippets for deriving CPP v7.3 benchmarks. Full Jupyter notebooks (.ipynb) will be uploaded soon for easier execution and visualization.
+To run: Copy each code block into a Python file or Jupyter cell. Requires numpy (pip install numpy if needed). Results may vary slightly due to randomness; increase n_events for convergence
 
 This repository contains the exact code that produced every number in Table 2 of
 "Conscious Point Physics (CPP): A Discrete, Pre-Geometric Foundation..."
