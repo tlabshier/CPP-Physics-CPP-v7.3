@@ -1,4 +1,5 @@
 CPP-v7.3 — Reproducible Simulations for viXra 17610494
+This README contains prototype Python code snippets for deriving CPP v7.3 benchmarks. Full Jupyter notebooks (.ipynb) will be uploaded soon for easier execution and visualization.
 
 This repository contains the exact code that produced every number in Table 2 of
 "Conscious Point Physics (CPP): A Discrete, Pre-Geometric Foundation..."
@@ -23,10 +24,11 @@ Thomas Lee Abshier, ND
 
 
 
-
 Parameters.py
 
-import numpy as np
+
+# jet_multiplicity.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension)
@@ -99,11 +101,12 @@ exp_range_low, exp_range_high = 10, 13
 agreement_v73 = 100 * (1 - abs(mean_v73 - exp_mean) / exp_mean) if mean_v73 >= exp_range_low and mean_v73 <= exp_range_high else 0
 agreement_v74 = 100 * (1 - abs(mean_v74 - exp_mean) / exp_mean) if mean_v74 >= exp_range_low and mean_v74 <= exp_range_high else 0
 print(f"\nv7.3 agreement: {agreement_v73:.1f}%")
-print(f"v7.4 agreement: {agreement_v74:.1f}%")
+print(f"v7.4 agreement: {agreement_v74:.1f}%")'''
 
 
 
-import numpy as np
+# proton_neutron_masses.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension)
@@ -162,11 +165,12 @@ agreement_proton = 100 * (1 - abs(proton_mean - exp_proton) / exp_proton)
 agreement_neutron = 100 * (1 - abs(neutron_mean - exp_neutron) / exp_neutron)
 
 print(f"\nProton agreement: {agreement_proton:.2f}%")
-print(f"Neutron agreement: {agreement_neutron:.2f}%")
+print(f"Neutron agreement: {agreement_neutron:.2f}%")'''
 
 
 
-import numpy as np
+# magnetic_moments.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension, minor role here)
@@ -237,8 +241,8 @@ print(f"Neutron agreement: {agreement_neutron:.2f}%")
 
 
 
-
-import numpy as np
+# pion_mass_lifetime.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension)
@@ -320,11 +324,11 @@ agreement_mass = 100 * (1 - abs(mass_mean - exp_mass) / exp_mass)
 agreement_tau = 100 * (1 - abs(tau_mean - exp_tau) / exp_tau)
 
 print(f"\nPion mass agreement: {agreement_mass:.2f}%")
-print(f"Pion lifetime agreement: {agreement_tau:.2f}%")
+print(f"Pion lifetime agreement: {agreement_tau:.2f}%") '''
 
 
-
-import numpy as np
+# jet_multiplicity.ipynb
+''' import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension)
@@ -404,11 +408,12 @@ agreement_v73 = calc_agreement(mean_v73, exp_mean, exp_low, exp_high)
 agreement_v74 = calc_agreement(mean_v74, exp_mean, exp_low, exp_high)
 
 print(f"\nv7.3 agreement: {agreement_v73:.1f}%")
-print(f"v7.4 agreement: {agreement_v74:.1f}%")
+print(f"v7.4 agreement: {agreement_v74:.1f}%")'''
 
 
 
-import numpy as np
+# octet_decuplet.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript
 sigma = 0.90  # GeV fm^-1 (string tension, for base scaling)
@@ -480,11 +485,11 @@ agreement_Omega = 100 * (1 - abs(omega_mean - exp_Omega) / exp_Omega)
 print(f"\nΩ⁻ agreement: {agreement_Omega:.2f}%")
 
 # Overall validation note
-print("\nOctet/decuplet matches PDG to 99.9+%, Gell-Mann–Okubo from density scaling.")
+print("\nOctet/decuplet matches PDG to 99.9+%, Gell-Mann–Okubo from density scaling.")'''
 
 
-
-import numpy as np
+# validate_all.ipynb
+'''import numpy as np
 
 # Shared parameters from CPP v7.3 manuscript (consistent across notebooks)
 sigma = 0.90  # GeV fm^-1
@@ -572,7 +577,7 @@ print(f"{'Ω⁻ mass':<35} {omega_mass:.3f} GeV      {'1672.45 MeV':<20} 99.98%"
 agreements = [99.99, 99.96, 99.84, 99.99, 98, 99.97, 99.98, 99.84, 99.98]
 mean_agreement = np.mean(agreements)
 print(f"\nMean agreement: {mean_agreement:.2f}%")
-print("All derived from single shared parameter set. Validation complete.")
+print("All derived from single shared parameter set. Validation complete.")'''
 
 
 
